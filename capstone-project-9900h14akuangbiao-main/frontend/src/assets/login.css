@@ -1,0 +1,80 @@
+body {
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-weight: 10;
+}
+.MuiButton-contained {
+    text-transform: none !important;
+}
+.auth-form {
+    padding-top: 100px;
+    margin: 0 auto ;
+}
+
+.auth-form-header {
+    font-weight: 10;
+    text-align: center;
+}
+
+.auth-form-body {
+    padding: 30px;
+    border-radius: 10px;
+    width: 20%;
+    margin: 0 auto;
+    background-color: #f5f8fa;
+    border: 1px solid #d0dae0;
+}
+
+.login-field {
+    padding-bottom: 20px;
+}
+
+.username-field {
+    
+    padding-bottom: 20px;
+}
+
+.password-field {
+    position: relative;
+    padding-bottom: 25px;
+}
+
+.register-field {
+    width: 20.2%;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 1px solid #d0dae0 ;
+}
+.username-input {
+    margin-top: 5px;
+    width: 98%;
+    height: 32px;
+    border-radius: 5px;
+    border: 1px solid #d0dae0;
+}
+
+.password-input {
+    margin-top: 5px;
+    width: 98%;
+    height: 32px;
+    border-radius: 5px;
+    border: 3px;
+    border: 1px solid #d0dae0;
+}
+
+.forgot-link {
+    color: rgb(56, 125, 186);
+    position: absolute;
+    top: 0;
+    right: 3px;
+}
+
+.register-link {
+    color: rgb(56, 125, 186);
+}
+

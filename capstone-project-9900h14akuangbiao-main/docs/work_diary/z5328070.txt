@@ -1,0 +1,145 @@
+Week 1
+1. Group formed. 
+2. created the Jira accounts. 
+3. Through analysis and guidance, the team members have selected the topic and the development language and framework used. 
+4. Discussed the specific functions that need to be developed with the team members and created a GitHub repository for development.
+5. Create Django project app and set django programming environment.
+6. Write a web crawler to collect rotten tomatoes's movie information data, add download movie poster function.
+    obstacles:
+        The poster is not directly stored on the website with the img tag, so it cannot be downloaded directly
+    overcome:
+        Obtain the request link of the poster image by capturing the packet, and obtain the poster by using request.get() and the link
+
+Week 2
+1. Crawler add collect movie information data function.
+    obstacles:
+        Movie information is stored in different tags, and extracting it directly will cause the text to be very confusing due to extra spaces, line breaks, and tabs.
+    overcome:
+        Process text through regularization and remove redundant symbols
+
+2. Crawler add collect movie's cast information function.
+    obstacles:
+        The names stored in the actor information are all NA, and the actor information cannot be obtained directly, for example:
+        {'@type': 'Person', 'name': 'NA', 'sameAs': 'https://www.rottentomatoes.com/celebrity/1168177-ben_whishaw', 'image': 'https://resizing.flixster.com/SkJDWYbLlELQyVBd4srJEZNn1iQ=/100x120/v2/https://flxt.tmsimg.com/assets/275095_v9_bc.jpg'}
+    overcome:
+        Use regex to get the actor's name by processing the link of the actor's page, and crop the actor's name with a unique ID
+3. movie information data
+    obstacles:
+        Different movies have different information. Some animated movies have no author, some musicals have no director, and some have no streaming release time. It is difficult to divide the string by ordinary methods.
+    overcome:
+        Use different beautifulsoup tag search methods to search, and then process the corresponding string
+
+4. Crawler add Bulk Search Movies function
+5. Add Swagger API function for front-end and backend contact
+6. Create database models
+
+Week 4
+1. Add UserProfile Model
+2. Add User Register function
+    obstacles:
+    "Bad Request: /userprofile/register/"
+    "KeyError: 'username'", send post request and register data, then server return this error.
+    "{"password":["This field is required."]}"
+    overcome:
+    "KeyError: 'username'":
+        1. has try fix view.py->register() and serializer.py->create() from username=validated_data['user']['username'] to username=validated_data['username'], delete user, but didn'g solve this problem
+        2. try to change model, add user field, but it need post user string.
+        3. try to change request json structure:
+        {
+            "user": {
+                "username": "testuser",
+                "email": "testuser@example.com",
+                "password": "testpassword123",
+                "first_name": "Test",
+                "last_name": "User"
+            },
+            "date_of_birth": "1990-01-01",
+            "country": "Australia",
+            "city": "Sydney"
+        }
+        but still because of user 
+
+        Finally, rewrite view.py->register() and serializer.py->create()
+3. Add User Login function
+    obstacles:
+        the same question for Register function
+    overcome:
+        the same solve method for Register function
+4. Add User Logout function
+    obstacles:
+        the same question for Register function
+    overcome:
+        the same solve method for Register function
+5. Add Swagger API documents:
+    obstacles:
+        1. Error:'AutoSchema' object has no attribute 'get_link'
+        2. still have other errors
+        3. drf-yasg didn't support the latest version drf
+
+    overcome:
+        1. Using an older version of django-rest-swagger, the attribute 'get_link' has been renamed to "get_operation"
+        2. The author of django-rest-swagger has given up updating this module, which has been deprecated in the django official guide, so use drf-yasg
+        3. use the drf-yasg2 module
+
+Week5
+1. Fix Swagger API documents
+2. Add Get movie function template
+
+Week6
+1. Finish python data crawler to collect rottentomatoes movie data and comments
+    obstacles:
+        1. Hard to input data in django ORM
+
+    overcome:
+        1. try to use scrapy
+        2. try to use scrapy-djangoitems
+        3. abandon to use ORM, use other method, save to json
+
+2. Add movie data
+    obstacles:
+        1. Hard to input data in django ORM
+    overcome:
+        1. use sqlite3 module connect to database and input data
+
+3. Add comments data
+    obstacles:
+        1. Models have something wrong
+    overcome:
+        1. fix models bug
+
+4. Add comments api
+
+Week7
+1. Rewrite UserProfile & Movie models
+    obstacles:
+        1. Models rasie AttributeError: 'str' object has no attribute '_meta'
+        2. Models rasie SystemCheckError: System check identified some issues:
+                ERRORS:
+                userprofile.Waitlist.email: (fields.E303) Reverse query name for 'userprofile.Waitlist.email' clashes with field name 'userprofile.UserProfile.waitlist'.
+                        HINT: Rename field 'userprofile.UserProfile.waitlist', or add/change a related_name argument to the definition for field 'userprofile.Waitlist.email'.
+    overcome:
+        1. The error is in the through_fields parameter of the waitlist field in the userprofile/models.py file. Between MoviePost and UserProfile, through_fields should be a tuple where the first element should be a field from the UserProfile model, not email.
+        2. According to the error message, the email field of the Waitlist model defines the same reverse query name as the waitlist field of the UserProfile model, so the related_name parameter of the waitlist field needs to be changed to another name to avoid name conflicts.
+
+2. Rewrite waitlist function
+3. Rewrite ban list  function
+4. Fix the data input crawler, use 10-point System and delete the score which use the character score
+5. Fix register function bug, return userprofile but need user case
+6. Fix login function bug, use twice hash encode password make password in database become different from input password
+7. Fix Movie API function bug, fix theater_date and streaming date
+8. Rewrite Movie Search API, use /movie/ return all movie list, use /movie/id/ return movie information
+
+Week8
+1. Change Authentication Method
+2. Fix Waitlist get function
+3. Fix Waitlist post function
+4. Fix Waitlist get list function
+5. Fix Waitlist post list function
+6. Add Banlist get function
+7. Add Banlist post function
+8. Add UserProfile Get function
+9. Add UserProfile Update function
+10. Fix poster bug, change save method
+11. Add news data crawler
+12. Change UserProfile get method, use /profile/ to get login user's profile, use /profile/username/ to get other user's profile, if username is login user's username, return login user's profile
+13. Add userprofile update authenticated check

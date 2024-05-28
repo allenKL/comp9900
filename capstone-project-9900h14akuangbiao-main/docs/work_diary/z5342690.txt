@@ -1,0 +1,41 @@
+Week1
+-Learn about the course requirements and grading criteria
+-Form teams and create groups
+-Discuss and share ideas with group members
+-Determine project
+
+Week2
+-Learn about the process of creating a website
+-Learn about the technical framework
+-Assign tasks in Jira
+
+Week3
+-Competing product analysis
+-Develop user story
+-Write proposal
+
+Week4
+-Learn DRF framework.
+-Start writing the backend code for the movie part.
+
+Week5
+-Participate in retrospective meetings.
+-Optimize existing code.
+-Fix Swagger API documents
+
+Week6
+-Added news page function.
+-Enabled to view news list.
+-Can view news detail page, including title, author, body, image and date.
+-Consider collaborative filtering algorithm for recommendation, consult the data.
+-Cold start problem.
+
+Week7
+Add recommendations based on user favorite content:
+-Get the movie in the user's waitlist.
+-Calculate a rating for each movie.
+-Sort by average rating from highest to lowest.
+-After users add movies to their favorites, select the same genre and recommend them in order of highest to lowest average rating.
+-If there are more than one type of movies in the user's collection, randomly select a few types and then recommend them in the order of highest to lowest average rating.
+-If there is no user's favorite, we will randomly recommend movies.
+

@@ -1,0 +1,13 @@
+
+.layout {
+    flex-wrap: wrap;
+    padding: 7% 6.3%;
+    display: flex;
+    
+}
+
+.card {
+    align-items: center;
+    margin: 10px;
+    
+}

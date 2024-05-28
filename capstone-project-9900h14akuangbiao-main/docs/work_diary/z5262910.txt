@@ -1,0 +1,51 @@
+Week1:
+1. Group formed.
+2. Determine to do the movie finder project and assign tasks, 
+   I am involved in the design of the front-end.
+3. Determine which frameworks need to be used for the entire project.
+
+Week2:
+1. Get familiar with the react framework and material UI.
+2. The entire structure of the front end was discussed and determined with boning and yihao.
+3. Started working on the landing page and completed the design of its style.
+
+Week3:
+1. Improved some features of the landing page.
+2. Drew the flow diagram and storyboard of the proposal.
+3. Started working on the sign-up page and implemented interaction
+   between the sign-up page and landing page.
+
+Week4: 
+1. Keep improving the functionality of the landing page and sign-up page.
+2. Implemented front and back-end communication.
+3. Started working on the wish list page and the deletion operation is completed.
+4. Started working on the banned list page and profile page.
+5. Integrated my tasks into the project.
+
+Week5:
+1. Finish the prototype of profile page and banned list page.
+2. Improved the validation functionality during login and registration.
+3. Optimized the interaction and layout of the wishlist page, and improved the delete function.
+
+Week6:
+1. Added the feature to edit personal information in the profile page.
+2. Integrated the profile navigator to the navigation bar.
+3. Added some error bubble tips functionality to profile and wishlist page.
+
+Week7:
+1. Improved UI and UX of wishlist page and banned list page.
+2. Finish wishlist and banned list features.
+3. Integrated my tasks into the project.
+
+Week8:
+1. Finsh the profile page of other users.
+2. Finish the router between banned list and profile.
+3. Implemented real-time toggling for bannedlist page and wishlist page.
+
+Week9:
+1. Finsh all the features of profile page.
+2. Redesign UI of wishlist bannedlist and profile.
+3. Fixed image display bugs of wishlist bannedlist and profile page.
+4. Fixed bugs of rendering some buttons.
+5. Finish create fourm feature.
+6. Added some dynamic effects of some components.

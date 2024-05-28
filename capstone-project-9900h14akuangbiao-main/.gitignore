@@ -1,0 +1,42 @@
+# python
+.python-version
+backend/backend/__pycache__/
+backend/backend/migrations/
+backend/movie/__pycache__/
+backend/movie/migrations/
+backend/userprofile/__pycache__/
+backend/userprofile/migrations/
+backend/forum/__pycache__/
+backend/forum/migrations/
+backend/__pycache__/recommend_movies.cpython-311.pyc
+backend/db.sqlite3
+# vscode
+.vscode/
+
+# frontend
+# dependencies
+frontend/node_modules
+
+# testing
+frontend/coverage
+
+# production
+frontend/build
+
+# macos
+.DS_Store
+
+# history
+.history/
+
+# data
+movie data/
+
+# env
+env
+
+# docs
+docs/proposal/userstories+functionalities.xlsx
+docs/tutor_questions
+backend/news.json
+backend/movie.json

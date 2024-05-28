@@ -1,0 +1,107 @@
+Week 1
+
+TODO:
+    - Form a group.
+    - Select a project.
+    - Choose dev tools and build a basic website framework for the project.
+Done:
+    - Formed a group named 9900H14AKuangBiao with 5 members.
+    - Selected the project 1 Movie Finder System.
+    - As front-end developers, Younian and I chose React, one of the famous
+      front-end frameworks, to do the project.
+TODO next week:
+    - Discuss the proposal, the eight functionalities of the project, the user
+      stories and sprints and the other basic requirements of the proposal.
+    - Translate the discussion into a standard Scrum workflow and add
+      it to Jira.
+    - Finish the first sprint with Younian.
+
+Week 2
+
+Done:
+    - Decided to do another two novelties: discussion and news.
+    - Finished the navigation bar and footer bar of the project frontend.
+Didn't do and why:
+    - 2nd item: because we haven't figured out
+      all the user stories yet.
+    - 3rd item: The first sprint is from week 3 to week 5, we only did some simple
+      tasks of the first sprint.
+TODO next week:
+    - Translate the discussion into a standard Scrum workflow and add
+      it to Jira.
+    - Finish the "sign in" page, "sign up" page, home page, search and browse 
+      features of the first sprint with Younian and Yihao.
+
+Week 3
+
+Done:
+    - Translate the discussion into a standard Scrum workflow and add
+      it to Jira.
+    - Finish the home page of the first sprint.
+Didn't do and why:
+    - 
+TODO next week:
+    - Finish proposal and submit it.
+    - Keep working the "sign in" page, "sign up" page, search and browse 
+      features of the first sprint with Younian and Yihao.
+
+Week 4
+
+Done:
+    - Finish proposal and submit it.
+    - Finish the search of the first sprint.
+Didn't do and why:
+    - 
+TODO next week:
+    - Keep working the "sign in" page, "sign up" page, and browse 
+      features of the first sprint with Younian and Yihao.
+
+Week 5
+
+Done:
+    - Finish the browse of the first sprint.
+Didn't do and why:
+    - 
+TODO next week:
+    - Keep working the review feature.
+
+Week 6
+
+Done:
+    - Finish the review feature.
+Didn't do and why:
+    - 
+TODO next week:
+    - Keep working the rating feature.
+
+Week 7
+
+Done:
+    - Finish the rating feature.
+Didn't do and why:
+    - 
+TODO next week:
+    - Keep working the other people review feature.
+
+Week 8
+
+Done:
+    - Finish the the other people review feature.
+Didn't do and why:
+    - 
+TODO next week:
+    - Keep working the discussion display and comment feature.
+
+Week 9
+
+Done:
+    - Finish the discussion display and comment feature.
+Didn't do and why:
+    - 
+TODO next week:
+    - Refactor the UI of the website and finish the final report.
+
+Week 10
+
+Done:
+    - Finish refactoring the UI of the website and finish the final report.

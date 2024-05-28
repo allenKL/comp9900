@@ -1,0 +1,48 @@
+Week1:
+- Get familiar with this course and know the assessment for this course.
+- Form a group called 9900h14akuangbiao.
+- Share the idea about choosing which project topics and finally we choose to do movie finder system.
+- Communicate with other group members and divide the work, and I am in charge of the backend.
+- Ask my friends who have already finish this course some question like what I should do to prepare for this course. Then I know if I want to do the back-end part, I should learn some about the Django in python. Then I google many resources about Django, some are text, and some are video tutorial. I start to learn and have already got some ideas about it.
+- Set up Jira and GitHub.
+
+Week2:
+- Share the ideas with other group members about two novelties we need to do and finally we decide to do discussion and news.
+- Complete the user stories part which will be used in the future.
+- Assign the works for the proposal.
+
+Week3
+- We do an reassign for the works and I am assigned to frontend team.
+- Finish the proposal part assigned to me.
+
+Week4
+- Begin to finish the work for me in sprint1.
+- I search many tutorial for frontend relevant to html, css, js and react. I try to do some simple works to get familiar with frontend.
+- Finish my part in sprint1, create a movie details page.
+
+Week5
+- Finish the work assign to me in sprint1
+- Attend the retrospective meeting and do some review for previous work.
+
+Week6
+- Assigned news page and recommendation function to me for sprint2.
+- Search for some resources that will give me some idea for my work.
+- Get start for my sprint2 work.
+
+Week7
+- Finsh my part in sprint2, create a news page.
+- Connect the frontend and backend for details page, do some test and fix the bug.
+
+Week8
+- Assigned to create one of the page of the forum part, the home page part that list all the articles posted.
+- Get start for my sprint3 work
+
+Week9
+- Finsh my sprint3 work
+- Begin to do some test for the founction we created before, and fix the bug.
+- Connect the frontend and backend for news page, do some tests to make sure it works.
+
+Week10
+- Communicate with my teammates and share the ideas of how to improve our works.
+- Do some rehearsal for the final demo.
+- Begin to work on my part of the final report.
